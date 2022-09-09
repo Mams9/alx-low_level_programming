@@ -1,29 +1,18 @@
-#include <stdio.h>
-
-
+#include<unistd.h>
 
 /**
+ * main - Entry point
  *
- *  * main - Entry point
+ * Description: print a quote using write function
+ *    ssize_t write(int fd, const void *buf, size_t count);
  *
- *   *
- *
- *    * Description: A C program that prints with put function
- *
- *     *
- *
- *      * Return: Always 0 (Success)
- *
- *      */
-
-
+ * Return: This time we return an error 1.
+*/
 
 int main(void)
-
 {
+	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-		puts("\"Programming is like building a multilingual puzzle");
-
-			return (0);
-
+	write(1, quo, 59);
+	return (1);
 }
