@@ -1,6 +1,6 @@
 /**
  * swap_int - swaps the value of two integers
- * 		using two input parametrs
+ * using two input parametrs
  *
  * @a: input parameter 1
  * @b: input parameter 2
