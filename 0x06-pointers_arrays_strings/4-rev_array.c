@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * reverse_array - Reverses the content of an array to an integer
+  * reverse_array - Reverses the content of an array to an integers
   * @a: an array of integers
   * @n: Number of elements to swap
   *
@@ -13,9 +13,9 @@ void reverse_array(int *a, int n)
 
 	p = a;
 
-	for (i = 1; i < n i++)
+	for (i = 1; i < n; i++)
 	{
-		p++
+		p++;
 	}
 
 	for (k = 0; k < i / 2; k++)
