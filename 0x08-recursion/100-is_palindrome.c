@@ -1,5 +1,5 @@
 #include "main.h"
-:/**
+/**
  * _strlen_recursion - find the length of string, recursively
  * @s: pointer to beginning of string
  * Return: int representing string length
@@ -11,7 +11,7 @@ int _strlen_recursion(char *s)
 	return (0);
 }
 /**
- * pal_check - recursively checks for palindrone
+ * pal_check - recursively checks for palindrome
  * @a: for the start of string
  * @length: length of string
  * Return: 1 if pal, 0 otherwise
