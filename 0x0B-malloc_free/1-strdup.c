@@ -9,7 +9,7 @@
  * Return: NULL if str == NULL @str
 */
 
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	int i = 0, l = 0;
 	char *s;
@@ -21,7 +21,7 @@ char *strdup(char *str)
 	while (str[l] != '\0')
 		l++;
 
-	s = malloc((l + 1) * sizeof (char));
+	s = malloc((l + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);
 
