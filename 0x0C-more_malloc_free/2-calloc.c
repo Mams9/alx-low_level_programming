@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * _calloc - this allocates the memory for an array called usingmalloc
+ * _calloc - this allocate the memory for an array called usingmalloc
  * @nmemb: the number elements
  * @size: the size of bytes
- * EReturn: pointer
+ * Return: pointer
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
