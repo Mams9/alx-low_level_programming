@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 /**
  * _memset - this sets first n bytes of the memory allocation area
  * @s: an array to set
- * @b: set to it
+ * @b: set it to
  * @n: the first n bytes
  * Return: s
  */
