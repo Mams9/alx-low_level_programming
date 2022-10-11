@@ -1,12 +1,6 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef ABSO
+#define ABSO
 
-/**
- * File: 3-function_like_macro.h
- * Desc: a Header file that defines a function-like macro ABS(x)
- * that computes the absolute value of a number x.
- */
+#define ABS(X) (((X) < (0)) ? (-(X)) : (X))
 
-#define ABS(x) ((x) < 0 ? (-x) : (x))
-
-#endif
+#endif /*ABS(X)*/
