@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(98);
 	}
 
 	arg1 = atoi(argv[1]);
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	if (!func)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	o = *argv[2];
