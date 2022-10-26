@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodient_at_index - Locatees a given node of
+ * get_nodeint_at_index - Locatees a given node of
  * a listint_t linked list.
  * @head: A pointer to the head of the listint_t list.
  * @index: The index of the node to locate - indicates start at 0.
