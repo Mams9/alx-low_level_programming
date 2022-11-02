@@ -17,7 +17,7 @@ char *create_buffer(char *file)
 
 	buffer = malloc(sizeof(char) * 1024);
 
-	if (buffer ==NULL)
+	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", file);
@@ -44,7 +44,7 @@ void close_file(int fd)
 }
 
 /**
- * main - Cpies the contents of a file to another file.
+ * main - Copies the contents of a file to another file.
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the argument.
  * Return: 0 on success.
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 	buffer = create_buffer(argv[2]);
 	from = open (argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC,, 0644);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 
 	do {
 		if (from == -1 || r == -1)
