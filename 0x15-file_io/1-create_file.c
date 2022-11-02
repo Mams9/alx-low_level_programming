@@ -3,7 +3,7 @@
 /**
  * create_file - creates a file
  * @filename: filename.
- * @text_context: content written in the file.
+ * @text_content: content written in the file.
  *
  * Return: 1 if it success. -1 if it fails.
  */
@@ -14,7 +14,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename  == NULL)
 		return (-1);
-	
+
 	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len];)
