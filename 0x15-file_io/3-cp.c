@@ -32,6 +32,7 @@ char *create_buffer(char *file)
  * @fd: The file descriptor to be closed.
  */
 void close_file(int fd)
+{
 	int c;
 
 	c = close(fd);
@@ -72,7 +73,7 @@ int main(int argc, char *argv[])
 	do {
 		if (from == -1 || r == -1)
 		{
-			dprint(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1];
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -80,7 +81,7 @@ int main(int argc, char *argv[])
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
-			dprint(STDERR_FILENO, "Error: Can't read from file %s\n". argv[2];
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
